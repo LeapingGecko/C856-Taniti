@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Visit Taniti!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <div data-wf="Flag" id="flag"></div>
+        <a href="home.html" id="headline">VISIT TANITI</a>
+        <div id="weather-container">
+            <span id="weather-city">Taniti</span>
+            <span id="weather">78&#176;F &#9788;</span>
+        </div>
+        <nav id="primary-nav">
+            <a data-submenu="none" href="home.html">Home</a>
+            <a data-submenu="things-to-do" href="activities.html">Things to Do</a>
+            <a class="active" data-submenu="sightseeing" href="sightseeing.html">Sightseeing</a>
+            <a data-submenu="restaurants" href="restaurants.html">Restaurants</a>
+            <a data-submenu="lodging" href="lodging.html">Lodging</a>
+            <div id="search-container">
+                <input type="text" id="search-input" placeholder="Search...">
+                <a id="search-go">&#x1F50E;&#xFE0E;</a>
+            </div>
+        </nav>
+        <nav id="secondary-nav">
+            <a href="ziplining.html" class="things-to-do hide">Ziplining</a>
+            <a href="snorkeling.html" class="things-to-do hide">Snorkeling</a>
+            <a href="golf.html" class="things-to-do hide">Golf</a>
+            <a href="bowling.html" class="things-to-do hide">Bowling</a>
+            <a href="beaches.html" class="sightseeing">Beaches</a>
+            <a href="rainforest.html" class="sightseeing active">Rainforest</a>
+            <a href="volcano.html" class="sightseeing">Volcano</a>
+            <a href="local-restaurants.html" class="restaurants hide">Locally-Sourced</a>
+            <a href="pan-asian.html" class="restaurants hide">Pan-Asian</a>
+            <a href="american.html" class="restaurants hide">American</a>
+            <a href="resort.html" class="lodging hide">Resort</a>
+            <a href="hotels.html" class="lodging hide">Hotels</a>
+            <a href="bed-and-breakfasts.html" class="lodging hide">Bed &amp; Breakfasts</a>
+        </nav>
+    </header>
+    <div id="social-media">
+        <svg data-original-source="https://www.iconfinder.com/icons/5296499/fb_facebook_facebook_logo_icon" class="icon" id="fb-icon" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M512,256c0,-141.385 -114.615,-256 -256,-256c-141.385,0 -256,114.615 -256,256c0,127.777 93.616,233.685 216,252.89l0,-178.89l-65,0l0,-74l65,0l0,-56.4c0,-64.16 38.219,-99.6 96.695,-99.6c28.009,0 57.305,5 57.305,5l0,63l-32.281,0c-31.801,0 -41.719,19.733 -41.719,39.978l0,48.022l71,0l-11.35,74l-59.65,0l0,178.89c122.385,-19.205 216,-125.113 216,-252.89Z" style="fill:#1877f2;fill-rule:nonzero;"/><path d="M355.65,330l11.35,-74l-71,0l0,-48.022c0,-20.245 9.917,-39.978 41.719,-39.978l32.281,0l0,-63c0,0 -29.297,-5 -57.305,-5c-58.476,0 -96.695,35.44 -96.695,99.6l0,56.4l-65,0l0,74l65,0l0,178.89c13.033,2.045 26.392,3.11 40,3.11c13.608,0 26.966,-1.065 40,-3.11l0,-178.89l59.65,0Z" style="fill:#fff;fill-rule:nonzero;"/></g></svg>
+        <svg data-original-source="https://www.iconfinder.com/icons/5296516/tweet_twitter_twitter_logo_icon" class="icon" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M448,512l-384,0c-35.328,0 -64,-28.672 -64,-64l0,-384c0,-35.328 28.672,-64 64,-64l384,0c35.328,0 64,28.672 64,64l0,384c0,35.328 -28.672,64 -64,64Z" id="Dark_Blue" style="fill:#1da1f2;fill-rule:nonzero;"/><path d="M196.608,386.048c120.704,0 186.752,-100.096 186.752,-186.752c0,-2.816 0,-5.632 -0.128,-8.448c12.8,-9.216 23.936,-20.864 32.768,-34.048c-11.776,5.248 -24.448,8.704 -37.76,10.368c13.568,-8.064 23.936,-20.992 28.928,-36.352c-12.672,7.552 -26.752,12.928 -41.728,15.872c-12.032,-12.8 -29.056,-20.736 -47.872,-20.736c-36.224,0 -65.664,29.44 -65.664,65.664c0,5.12 0.64,10.112 1.664,14.976c-54.528,-2.688 -102.912,-28.928 -135.296,-68.608c-5.632,9.728 -8.832,20.992 -8.832,33.024c0,22.784 11.648,42.88 29.184,54.656c-10.752,-0.384 -20.864,-3.328 -29.696,-8.192l0,0.896c0,31.744 22.656,58.368 52.608,64.384c-5.504,1.536 -11.264,2.304 -17.28,2.304c-4.224,0 -8.32,-0.384 -12.288,-1.152c8.32,26.112 32.64,45.056 61.312,45.568c-22.528,17.664 -50.816,28.16 -81.536,28.16c-5.248,0 -10.496,-0.256 -15.616,-0.896c28.928,18.432 63.488,29.312 100.48,29.312" id="Logo__x2014__FIXED" style="fill:#fff;fill-rule:nonzero;"/></g></svg>
+        <svg data-original-source="https://www.iconfinder.com/icons/5296503/inspiration_pin_pinned_pinterest_social_network_pinterest_logo_icon" class="icon" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M511.999,256.002c0,141.373 -114.606,255.979 -255.98,255.979c-141.373,0 -255.979,-114.606 -255.979,-255.979c0,-141.374 114.606,-255.98 255.979,-255.98c141.374,0 255.98,114.606 255.98,255.98Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M255.998,0.001c-141.384,0 -255.998,114.617 -255.998,255.998c0,108.456 67.475,201.171 162.707,238.471c-2.24,-20.255 -4.261,-51.405 0.889,-73.518c4.65,-19.978 30.018,-127.248 30.018,-127.248c0,0 -7.659,-15.334 -7.659,-38.008c0,-35.596 20.632,-62.171 46.323,-62.171c21.839,0 32.391,16.399 32.391,36.061c0,21.966 -13.984,54.803 -21.203,85.235c-6.03,25.482 12.779,46.261 37.909,46.261c45.503,0 80.477,-47.976 80.477,-117.229c0,-61.293 -44.045,-104.149 -106.932,-104.149c-72.841,0 -115.597,54.634 -115.597,111.095c0,22.004 8.475,45.596 19.052,58.421c2.09,2.535 2.398,4.758 1.776,7.343c-1.945,8.087 -6.262,25.474 -7.111,29.032c-1.117,4.686 -3.711,5.681 -8.561,3.424c-31.974,-14.884 -51.963,-61.627 -51.963,-99.174c0,-80.755 58.672,-154.915 169.148,-154.915c88.806,0 157.821,63.279 157.821,147.85c0,88.229 -55.629,159.232 -132.842,159.232c-25.94,0 -50.328,-13.476 -58.674,-29.394c0,0 -12.838,48.878 -15.95,60.856c-5.782,22.237 -21.382,50.109 -31.818,67.11c23.955,7.417 49.409,11.416 75.797,11.416c141.389,0 256.003,-114.612 256.003,-256.001c0,-141.381 -114.614,-255.998 -256.003,-255.998Z" style="fill:#e71d27;fill-rule:nonzero;"/></g></svg>
+    </div>
+    <main>
+        <h1>Taniti's Rainforest</h1>
+        <div data-wf="Rainforest" id="main-gallery"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna ac placerat vestibulum lectus mauris ultrices eros. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Enim sed faucibus turpis in eu mi. Tortor consequat id porta nibh venenatis cras sed felis. Enim eu turpis egestas pretium aenean pharetra magna. Eu volutpat odio facilisis mauris sit amet massa vitae. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Fringilla ut morbi tincidunt augue interdum velit euismod in. Mi tempus imperdiet nulla malesuada pellentesque.</p>
+        <p>Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Donec adipiscing tristique risus nec feugiat in fermentum posuere urna. Eu volutpat odio facilisis mauris sit amet massa. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Faucibus in ornare quam viverra. Eget duis at tellus at urna condimentum mattis. Fames ac turpis egestas sed. Vitae suscipit tellus mauris a diam maecenas sed enim ut. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis. Suspendisse sed nisi lacus sed. Lacinia at quis risus sed vulputate odio ut. Hendrerit gravida rutrum quisque non tellus orci ac. Adipiscing tristique risus nec feugiat in fermentum posuere. Eu augue ut lectus arcu bibendum at varius vel pharetra. Id porta nibh venenatis cras sed felis eget velit. Facilisi morbi tempus iaculis urna id volutpat lacus. Cursus vitae congue mauris rhoncus aenean vel. Consequat nisl vel pretium lectus quam.</p>
+        <p>Leo vel orci porta non. Proin nibh nisl condimentum id venenatis a. At ultrices mi tempus imperdiet nulla malesuada pellentesque. Diam maecenas sed enim ut. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Habitant morbi tristique senectus et netus. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Et egestas quis ipsum suspendisse ultrices. Sed egestas egestas fringilla phasellus. Purus gravida quis blandit turpis cursus in hac habitasse. Ut placerat orci nulla pellentesque dignissim enim sit amet venenatis. Elementum tempus egestas sed sed risus pretium. Mauris vitae ultricies leo integer malesuada. Purus gravida quis blandit turpis cursus in hac habitasse. Justo eget magna fermentum iaculis eu. Suspendisse sed nisi lacus sed viverra tellus. Nisl purus in mollis nunc sed id semper risus.</p>
+        <p>Facilisi morbi tempus iaculis urna. Mattis pellentesque id nibh tortor id aliquet lectus proin. Id faucibus nisl tincidunt eget nullam. Eget nullam non nisi est sit amet facilisis. Fringilla est ullamcorper eget nulla facilisi. Mattis ullamcorper velit sed ullamcorper morbi. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Morbi tristique senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit dolor. Ornare arcu odio ut sem nulla pharetra diam sit amet. Eget gravida cum sociis natoque penatibus et magnis dis parturient. Sit amet purus gravida quis blandit turpis cursus. Id cursus metus aliquam eleifend. Vulputate sapien nec sagittis aliquam malesuada.</p>
+    </main>
+    <footer>
+        <a id="contact" href="mailto:contact@example.com">Contact Us</a>
+        <span id="copyright">&copy; Taniti Travel</span>
+    </footer>
+  </body>
+</html>

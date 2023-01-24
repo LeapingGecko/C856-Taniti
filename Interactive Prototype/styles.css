@@ -1,0 +1,195 @@
+body {
+    background-color: #fefae0;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    /* background-color: rgb(236, 236, 236); */
+}
+
+img.flag {
+    width: 5rem;
+    height: 2rem;
+}
+
+div#flag {
+    width: 5rem;
+    height: 2rem;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+    justify-content: flex-end;
+    background-color: #BC6C25;
+    padding: 5px;
+}
+
+a#headline {
+    margin: 1px 10px;
+    font-size: 2.3em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav {
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 3%;
+    position: relative;
+}
+
+nav#primary-nav {
+    font-size: 1.75em;
+    background-color: #BC6C25;
+}
+
+nav#primary-nav:first-child {
+    margin-left: auto;
+}
+
+nav > a {
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    margin: 4px;
+}
+
+nav#secondary-nav {
+    height: 1.75em;
+    font-size: 1.25em;
+    background-color: #dda15e;
+}
+
+nav > a.active {
+    border: 2px solid;
+    font-weight: bold;
+}
+
+div#search-container {
+    height: auto;
+    font-size: 1em;
+    margin-left: auto;
+}
+
+input#search-input {
+    font-size: 0.5em;
+    width: 15vw;
+    max-width: 200px;
+}
+
+a#search-go {
+    cursor: pointer;
+}
+
+div#weather-container {
+    margin-left: auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+span#weather {
+    font-size: 2.5em;
+}
+
+div#main-gallery {
+    width: 100%;
+    height: 40vh;
+}
+
+div#social-media {
+    position: fixed;
+    display: flex;
+    flex-flow: column nowrap;
+    right: 0;
+    top: 50vh;
+    z-index: 99;
+    gap: 5px;
+}
+
+svg.icon {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+div.summary-pic {
+    width: 55%;
+    aspect-ratio: 4/3;
+    flex-shrink: 0;
+}
+
+div.summary {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 10px;
+    padding: 10px;
+}
+
+div.summary:nth-child(odd) {
+    background-color: #9B1D20;
+    color: white;
+}
+
+div.summary:nth-child(even) {
+    flex-direction: row-reverse;
+    background-color: #19381F;
+    color: white;
+}
+
+.summary-text {
+    width: auto;
+    margin: 0 10px;
+}
+
+.summary-text > a {
+    color: white;
+}
+
+div[data-hyper] {
+    cursor: pointer;
+}
+
+/* From https://meyerweb.com/eric/thoughts/2017/11/27/generating-wireframe-boxes-with-css-and-html5/ */
+html {
+   --fill: #F7F6F1BB;
+   --wire: gray;
+}
+[data-wf] {outline: 2px solid var(--wire);
+   position: relative; z-index: 1;}
+[data-wf]::before {
+   position: absolute; z-index: 8675309;
+   top: 0; bottom: 0; right: 0; left: 0;
+   background:
+      linear-gradient(to top right,
+         transparent calc(50% - 1px), var(--wire) calc(50% - 1px),
+         var(--wire) calc(50% + 1px), transparent calc(50% + 1px)),
+      linear-gradient(to bottom right,
+         transparent calc(50% - 1px), var(--wire) calc(50% - 1px),
+         var(--wire) calc(50% + 1px), transparent calc(50% + 1px)),
+      var(--fill);
+      content: attr(data-wf);
+      font: bold 2em Jubilat, Georgia, serif;
+      color: var(--wire);
+      text-shadow:
+         0 0 0.25em var(--fill), 0 0 0.25em var(--fill),
+         0 0 0.25em var(--fill), 0 0 0.25em var(--fill),
+         0 0 0.25em var(--fill);
+      display: flex; justify-content: center; align-items: center;
+}
