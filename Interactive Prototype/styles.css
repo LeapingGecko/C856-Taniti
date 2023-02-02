@@ -5,7 +5,6 @@ body {
 main {
     max-width: 800px;
     margin: auto;
-    /* background-color: rgb(236, 236, 236); */
 }
 
 img.flag {
@@ -127,6 +126,20 @@ svg.icon {
 
 .hide {
     display: none;
+}
+
+.accordion > h2 {
+    cursor: pointer;
+}
+
+.monospace{
+    font-family: 'Menlo', 'Lucida Console', 'Monaco', 'Consolas', monospace;
+}
+
+div.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 div.summary-pic {
